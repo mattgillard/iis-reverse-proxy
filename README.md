@@ -2,6 +2,8 @@
 
 This is a basic configuration to setup IIS as a reverse proxy on the IIS Default Web site. All it does it forward all traffic to a downstream host and strip the HTTP_ACCEPT_ENCODING HTTP header to ensure responses are not compressed so all FQDN's in the responses match the proxy host's FQDN so all links work correctly.
 
+![Reverse Proxy overview](https://github.com/mattgillard/iis-reverse-proxy/blob/main/reverse_proxy.png)
+
 This might not suit all requirements and your mileage may vary.  This was designed as a frontend for SSRS hosted on [AWS RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.SSRS.html) to avoid the need for installing RDS Root CA's on client devices to access reports.  AWS do not support custom FQDN's for SSRS as of June 2022 so this works around that limitation.
 
 ## Creating Configuration Files (snapshot of IIS config)
