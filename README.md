@@ -15,7 +15,7 @@ The configuration files administration.config and applicationHost.config are gen
 
 `Install-WindowsFeature -name Web-Server -IncludeManagementTools`
 
-2. Make sure Application Request Routing (ARR) v3 is installed (https://www.microsoft.com/en-us/download/details.aspx?id=47333). This download includes all dependencies so no need to use the Web Platform Installer which is being [deprecated](https://docs.microsoft.com/en-us/answers/questions/429383/web-platform-installer-end-of-support-and-sunsetti.html). Note: more details here on ARR https://www.iis.net/downloads/microsoft/application-request-routing
+2. Make sure Application Request Routing (ARR) v3 is installed (https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=ARRv3_0). This download includes all dependencies.  Note: more details here on ARR https://www.iis.net/downloads/microsoft/application-request-routing
 
 3. To import config into IIS:
 
